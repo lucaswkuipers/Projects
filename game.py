@@ -19,8 +19,8 @@ from time import sleep
 clear()
 
 # Settings
-fade_time = 0.3  #Factor to the default time it takes for a message to be erased
-typing_time = 0.3  #Factor to the default time it takes for each letter to be printed
+fade_time = 0.4  #Factor to the default time it takes for a message to be erased
+typing_time = 0.4  #Factor to the default time it takes for each letter to be printed
 difficulty = 1  #Factor to the default enemies' stats
 
 
