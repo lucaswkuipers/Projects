@@ -12,11 +12,9 @@ from replit import clear
 from readchar import readkey
 import random
 import numpy as np
-import matplotlib
 import re
 import sys
 from time import sleep
-clear()
 
 # Settings
 fade_time = 0.4  #Factor to the default time it takes for a message to be erased
