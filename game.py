@@ -1,12 +1,5 @@
 #Game by Lucas W. Kuipers a.k.a Coppertone
 
-title ="""  _______              _          _           ______  __        _   __        __
-|_   __ \            (_)        | |        .' ___  |[  |      (_) [  |      |  ]
-  | |__) |  __   _   __   _ .--.\_|.--.   / .'   \_| | |--.   __   | |  .--.| |
-  |  __ /  [  | | | [  | [ `.-. | ( (`\]  | |        | .-. | [  |  | |/ /'`\' |
- _| |  \ \_ | \_/ |, | |  | | | |  `'.'.  \ `.___.'\ | | | |  | |  | || \__/  |
-|____| |___|'.__.'_/[___][___||__][\__) )  `.____ .'[___]|__][___][___]'.__.;__] """
-
 #Import Modules
 from replit import clear
 from readchar import readkey
@@ -43,8 +36,6 @@ def typing(words):
 	sleep(fade_time * len(words) / 10)
 	clear()
 
-typing(title)
-
 # Initialize Character
 player = {
     'name': 'DEFAULT',
@@ -77,7 +68,7 @@ typing('May you fight with the strength of ten full grown men, ' + player['name'
 # Level up
 def level_up():
 	xp_to_level_up = 15 * np.ln(player['level'] + 1)
-	if playe['xp'] >= xp_to_level_up:
+	if player['xp'] >= xp_to_level_up:
 		player['level'] += 1
 		typing('You leveled up! Now you are level ' + player['level'])
 		player['xp'] = player['xp'] - xp_to_level_up
@@ -244,9 +235,8 @@ def player_death():
 
 
 # Show Player Stats
-# def player_stats():
-# 	msg_name = "Name: " + player['name']
-#   if player['current_health']
+def player_stats():
+	print(player)
 
 
 # Player Turn
