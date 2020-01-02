@@ -6,14 +6,14 @@ ans = '0'
 
 #### Importing First Names  ####
 first_names = list()
-with open('C:\Projects\Name Generator\FirstNames.txt', 'r') as f:
+with open('first_names.txt', 'r') as f:
   for line in f:
     first_names.append(line)
-  first_names = [line.rstrip('\n') for line in open('C:\Projects\Name Generator\FirstNames.txt')]
+  first_names = [line.rstrip('\n') for line in open('first_names.txt')]
 
 #### Importing Last Names ####
 last_names = list()
-with open('C:\Projects\Name Generator\LastNames.txt', 'r') as f:
+with open('last_names.txt', 'r') as f:
     text = f.read()
     text = text.split()
 
